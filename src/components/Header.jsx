@@ -10,6 +10,7 @@ import {
   Home,
 } from "lucide-react";
 
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -20,7 +21,7 @@ const Header = () => {
         {/* Logo Section  */}
 
         <h1 className="text-2xl md:text-4xl lg:text-5xl font-light m-0">
-          PORT<span className="text-[rgb(255,193,60)]">FOLIO</span>
+          PORT<span className="text-amber-500">FOLIO</span>
         </h1>
 
         {/* Desktop Navigation  */}
@@ -92,7 +93,7 @@ const Header = () => {
         {/* Mobile Navigation  */}
 
         <button
-          className="lg:hidden text-gray-200 mr-2 z-30"
+          className="lg:hidden text-gray-200 mr-2 z-30 lg:m-auto md:mb-1 "
           onClick={toggleMenu}
         >
           {!isOpen ? <Menu size={25} className="" /> : <CircleX size={25} />}

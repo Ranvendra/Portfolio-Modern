@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Navigation } from "lucide-react";
 import Spline from "@splinetool/react-spline";
 
 const Hero = () => {
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
+
+  useEffect(() => {
+    // Check on mount
+    const checkDevice = () => {
+      setIsMobileOrTablet(window.innerWidth < 1024); // Tailwind 'lg' breakpoint = 1024px
+    };
+
+    checkDevice();
+    window.addEventListener("resize", checkDevice);
+
+    return () => window.removeEventListener("resize", checkDevice);
+  }, []);
+
   return (
     <main className="flex lg:mt-20 flex-col lg:flex-row items-center justify-between min-h-[calc(90vh-6rem)]">
       {/* left section  */}
@@ -48,15 +62,15 @@ const Hero = () => {
 
       {/* Right Section- 3D reobot  */}
 
-      <div>
-        <Spline 
-        className="absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[-2%] h-full"
-        scene="https://prod.spline.design/4aocxiH602KhxMTb/scene.splinecode" />
+        <Spline
+          className="absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[-2%] h-full"
+          scene={
+            isMobileOrTablet
+              ? "https://prod.spline.design/g1ItE76QtCGl0-52/scene.splinecode"
+              : "https://prod.spline.design/4aocxiH602KhxMTb/scene.splinecode"
+          }
+        />
 
-        {/* mobile- tablet screen spline code  */}
-      {/* scene="https://prod.spline.design/g1ItE76QtCGl0-52/scene.splinecode" /> */}
-
-      </div>
     </main>
   );
 };
