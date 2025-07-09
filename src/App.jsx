@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+// import CustomCursor from "./components/CustomCursor";
+import AboutSection from "./components/AboutSection";
 
 const App = () => {
   return (
@@ -19,10 +21,15 @@ const App = () => {
       {/* header Comopnet  */}
       <Header />
       <Hero/>
+      <AboutSection/>
 
-      <div className="mt-20 text-4xl text-center">. . . This Project is Still in Development . . .</div>
+      {/* <div className="border-2 border-amber-500">
+        <div className="mt-20 text-4xl text-center">. . . This Project is Still in Development . . .</div>
 
       <div className="mt-1 text-md text-center">(and Do Not Try to Copy 🧐, Nahi to pulis case Kar Dunga 😂🤣🤣 )</div>
+      </div> */}
+
+      
 
     </main>
   );
