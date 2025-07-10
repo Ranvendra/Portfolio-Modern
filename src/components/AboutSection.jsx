@@ -35,13 +35,13 @@ const AboutSection = () => {
     // Intro Animation
     gsap.fromTo(
       introRef.current,
-      { y: 100, opacity: 0, filter: "blur(10px)" },
+      { y: -400, opacity: 0, filter: "blur(10px)" },
 
       {
         y: -700,
         opacity: 1,
         filter: "blur(0px)",
-        duration: 1.5,
+        duration: 1,
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 40%",

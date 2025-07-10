@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 
 @layer base {
@@ -9,5 +9,118 @@
     font-sans 
     h-screen
     overflow-x-hidden
+  }
+} */
+
+
+
+
+@import "tailwindcss";
+
+:root {
+  --border: 0 0% 80%;
+  --input: 0 0% 90%;
+  --ring: 240 100% 70%;
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --primary: 260 100% 67%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 10% 40%;
+  --secondary-foreground: 0 0% 100%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --muted: 210 10% 25%;
+  --muted-foreground: 0 0% 70%;
+  --accent: 50 100% 50%;
+  --accent-foreground: 0 0% 0%;
+  --popover: 0 0% 15%;
+  --popover-foreground: 0 0% 100%;
+  --card: 0 0% 12%;
+  --card-foreground: 0 0% 100%;
+}
+
+
+@layer base {
+  body {
+    @apply bg-black
+    text-white
+    relative
+    font-sans 
+    h-screen
+    overflow-x-hidden
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  cursor: none;
+  position: relative;
+  background-color: black;
+  color: white;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  cursor: none;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.panel {
+  width: 100%;
+  height: 100vh;
+}
+
+.pin-spacer {
+  height: 200vh;
+}
+
+@media (max-width: 768px) {
+  html,
+  body,
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    cursor: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+
+  .panel-title {
+    font-size: 2rem !important;
+  }
+
+  .panel-desc {
+    font-size: 1rem !important;
   }
 }

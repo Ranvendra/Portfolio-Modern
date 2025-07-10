@@ -3,8 +3,26 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 // import CustomCursor from "./components/CustomCursor";
 import AboutSection from "./components/AboutSection";
+import ProjectSection from "./components/ProjectSection";
+
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const App = () => {
+  useEffect(() => {
+    //Register Scroll Trigger PLugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Refresh ScrollTrigger when the page is fully Loaded
+    ScrollTrigger.refresh();
+
+    // CleanUp ScrollTrigger on Component Unmount
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
+
   return (
     <main>
       {/* Gradient Image  */}
@@ -20,17 +38,15 @@ const App = () => {
 
       {/* header Comopnet  */}
       <Header />
-      <Hero/>
-      <AboutSection/>
+      <Hero />
+      <AboutSection />
+      <ProjectSection />
 
       {/* <div className="border-2 border-amber-500">
         <div className="mt-20 text-4xl text-center">. . . This Project is Still in Development . . .</div>
 
       <div className="mt-1 text-md text-center">(and Do Not Try to Copy 🧐, Nahi to pulis case Kar Dunga 😂🤣🤣 )</div>
       </div> */}
-
-      
-
     </main>
   );
 };
