@@ -176,11 +176,11 @@ const ProjectSection = () => {
     <section
         ref={sectionRef}
         id='horizontal-section'
-        className='relative py-20 bg-gray-100 overflow-hidden border-2 border-amber-500'
+        className='relative py-20 bg-gray-100 overflow-hidden'
     >
         {/* section Title  */}
 
-        <div className='container mx-auto px-4 mb-16 relative z-10 border-2 border-amber-500'>
+        <div className='container mx-auto px-4 mb-16 relative z-10'>
 
             <h2
                 ref={titleRef}
@@ -194,7 +194,7 @@ const ProjectSection = () => {
 
         <div 
             ref={triggerRef}
-            className='overflow-hidden opacity-0 border-2 border-amber-500'>
+            className='overflow-hidden opacity-0'>
 
             <div
                 ref={horizontalRef}
