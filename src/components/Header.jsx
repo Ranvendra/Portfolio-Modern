@@ -20,7 +20,7 @@ const Header = () => {
       <header className="flex justify-between items-center px-5 py-4 lg:px-15 md:px-10">
         {/* Logo Section  */}
 
-        <h1 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-light m-0">
+        <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-light m-0">
           PORT<span className="text-amber-500">FOLIO</span>
         </h1>
 
