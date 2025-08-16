@@ -3,7 +3,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 // import CustomCursor from "./components/CustomCursor";
 import AboutSection from "./components/AboutSection";
-import ProjectSection from "./components/ProjectSection";
+import SkillsSection from "./components/SkillsSection";
+import ProjectCard from "./components/ProjectCard"
 
 import { useEffect } from "react";
 import { gsap } from "gsap";
@@ -40,8 +41,8 @@ const App = () => {
       <Header />
       <Hero />
       <AboutSection />
-      <ProjectSection />
-
+      <SkillsSection />
+      <ProjectCard/>
       {/* <div className="border-2 border-amber-500">
         <div className="mt-20 text-4xl text-center">. . . This Project is Still in Development . . .</div>
 

@@ -122,11 +122,11 @@ const AboutSection = () => {
       {/* About content- Container  */}
       <div
         ref={introRef}
-        className="w-full flex flex-col md:flex-row justify-between items-center gap-15 px-5 lg:px-28 py-15 opacity-0"
+        className="w-full flex flex-col-reverse md:flex-row justify-between items-center gap-15 px-5 lg:px-28 py-15 opacity-0"
       >
         {/* About Text */}
-        <div className="md:w-3/5">
-          <h3 className="text-sm md:text-2xl text-purple-200 tracking-wider">
+        <div className="md:w-3/5 h-full">
+          <h3 className="text-sm md:text-2xl text-purple-200 tracking-wider h-full">
             I’m Ranvendra Pratap Singh, a second-year B.Tech student at Newton
             School of Technology, where I’m growing through hands-on experience
             in full-stack development, data structures, and system design.
