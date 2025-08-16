@@ -146,7 +146,7 @@ const AboutSection = () => {
         {/* Image */}
         <div className="md:w-2/5 overflow-hidden">
           <img
-            src="https://ranvendrapratapsingh.netlify.app/main.png"
+            src={"./Main.webp"}
             alt="Portrait of Ranvendra Pratap Singh"
             className="w-full px-12 h-[50%]"
           />

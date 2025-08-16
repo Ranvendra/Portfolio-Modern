@@ -79,7 +79,7 @@ const Header = () => {
             className="w-11 h-11 rounded-2xl bg-white p-[3px] hover:translate-y-[-4px] transition-all duration-300"
           >
             <img
-              src={`/Github.png`}
+              src={`/Github.webp`}
               className="rounded-2xl hover:scale-120 transotion-all duration-300"
             />
           </a>
@@ -89,7 +89,7 @@ const Header = () => {
             className="w-11 h-11 rounded-2xl bg-white p-[3px] hover:translate-y-[-4px] transition-all duration-300"
           >
             <img
-              src={`/Instagram.png`}
+              src={`/Instagram.webp`}
               className="rounded-2xl hover:scale-120 transotion-all duration-300"
             />
           </a>
@@ -99,7 +99,7 @@ const Header = () => {
             className="w-11 h-11 rounded-2xl bg-white p-[3px] hover:translate-y-[-4px] transition-all duration-300"
           >
             <img
-              src={"/LinkedIn.png"}
+              src={"/LinkedIn.webp"}
               className="rounded-2xl hover:scale-120 transotion-all duration-300"
             />
           </a>
